@@ -4,26 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Otaku Sign In Page</title>
 </head>
 
 <body>
     <!-- Como ficará a estrutura do site -->
-    <main>
+    <main class="fundo">
         <form>
-            <h1>
-
+            <h1 class="titulo">
+                Login
             </h1>
-            <div>
-                <input type="email" name="" id="">
-                <input type="password" name="" id="">
+            <div class="container--informacoes">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" name="" id="" placeholder="Email">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="" id="" placeholder="Senha">
                 <input type="checkbox" name="" id="">
                 <a href="">Esqueceu a senha?</a>
-                <button>Login</button>
+                <button class="botao--entrar">Login</button>
             </div>
-            <p>Não tem uma conta? <a href="">Cadastre-se.</a></p>
+            <p class="texto--registrar">Não tem uma conta? <a href="#" class="cadastrar">Cadastre-se.</a></p>
         </form>
     </main>
+<script src="https://kit.fontawesome.com/35a318e47f.js" crossorigin="anonymous"></script>
+<script src="src/js/index.js"></script>
 </body>
 
 </html>
