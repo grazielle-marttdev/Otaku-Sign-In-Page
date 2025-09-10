@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    color: #fff;
+    height: 100vh;
+}
+
+.fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    background: url('../images/Fundo.webp');
+}
+
+.fundo form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    padding: 45px 32px;
+    border: 2px solid #fff;
+    border-radius: 14px;
+}
+
+form .titulo {
+    margin-bottom: 30px;
+}
+
+form .container--informacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form .container--informacoes .login-opcoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-opcoes .container-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container--informacoes input {
+    width: 88%;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.container--informacoes input::placeholder {
+    color: #fff;
+}
+
+.container--informacoes .checkbox,
+.container--informacoes .senha,
+.texto--registrar {
+    font-size: 12px;
+}
+
+.container--informacoes .botao--entrar {
+    font-weight: 500;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}

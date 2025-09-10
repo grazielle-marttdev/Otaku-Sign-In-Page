@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
     <title>Otaku Sign In Page</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
@@ -16,15 +18,28 @@
                 Login
             </h1>
             <div class="container--informacoes">
-                <i class="fa-solid fa-user"></i>
-                <input type="email" name="" id="" placeholder="Email">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" name="" id="" placeholder="Senha">
-                <input type="checkbox" name="" id="">
-                <a href="">Esqueceu a senha?</a>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" name="" id="" placeholder="Email">
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="" id="" placeholder="Senha">
+                </div>
+                
+                <div class="login-opcoes">
+                    <div class="container-checkbox">
+                        <input type="checkbox" name="">
+                        <label for="" class="checkbox">Lembrar de mim</label>
+                    </div>
+                
+                    <a href="" class="senha">Esqueceu a senha?</a>
+                </div>
+                
                 <button class="botao--entrar">Login</button>
             </div>
-            <p class="texto--registrar">Não tem uma conta? <a href="#" class="cadastrar">Cadastre-se.</a></p>
+            <p class="texto--registrar">Não tem uma conta? <a href="#" class="cadastrar"><strong>Cadastre-se</strong>.</a></p>
         </form>
     </main>
 <script src="https://kit.fontawesome.com/35a318e47f.js" crossorigin="anonymous"></script>
