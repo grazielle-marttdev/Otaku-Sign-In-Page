@@ -11,7 +11,7 @@ body {
     justify-content: center;
     height: 100%;
     
-    background: url('../images/Fundo.webp') no-repeat center center;
+    background: url('../images/Fundo1.webp') no-repeat center center;
     background-size: cover;
 }
 
@@ -24,7 +24,7 @@ body {
     border: 2px solid #fff;
     border-radius: 14px;
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -39,28 +39,13 @@ form .container--informacoes {
     gap: 25px;
 }
 
-form .container--informacoes .login-opcoes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.login-opcoes .container-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    white-space: nowrap;
-}
-
-.login-opcoes .container-checkbox input {
-    accent-color: #e1e1e1;
-}
 
 .container--informacoes input {
-    width: 88%;
+    font-weight: 500;
+    width: 100%;
     padding: 8px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
     color: #fff;
 }
 
@@ -70,6 +55,42 @@ form .container--informacoes .login-opcoes {
 
 .container--informacoes input:focus {
     outline: none;
+}
+
+.container--informacoes .campo--email,
+.container--informacoes .campo--senha {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+form .container--informacoes .login--opcoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container--informacoes .fa-eye,
+.container--informacoes .fa-eye-slash {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.container--informacoes .fa-eye:hover,
+.container--informacoes .fa-eye-slash:hover {
+    color: #f9f8ebb0;
+}
+
+
+.login--opcoes .container--checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.login--opcoes .container--checkbox input {
+    accent-color: #e1e1e1;
 }
 
 .container--informacoes .checkbox,
@@ -94,7 +115,14 @@ form .container--informacoes .login-opcoes {
 }
 
 .botao--entrar:hover {
-    background-color: #e1e1e1;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #f9f8eb;
+    box-shadow: 0 3px 12px rgba(255, 255, 219, 0.8);
     transform: translateY(-2px);
 }
+
+.container--informacoes .fa-eye.esconder {
+    display: none;
+}
+.container--informacoes .fa-eye-slash.esconder {
+    display: none;
+} 

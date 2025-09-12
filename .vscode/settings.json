@@ -1,0 +1,9 @@
+{
+    "vscode-pets.theme": "none",
+    "vscode-pets.throwBallWithMouse": false,
+    "vscode-pets.petType": "chicken",
+    "vscode-pets.petSize": "small",
+    "vscode-pets.disableEffects": false,
+    "vscode-pets.petColor": "brown",
+    "vscode-pets.position": "explorer"
+}
